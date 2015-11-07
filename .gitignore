@@ -1,0 +1,13 @@
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+
+# OS / IDE  generated files #
+######################
+.DS_Store
+*.esproj
+*.sublime-project
+*.sublime-workspace
+*.idea
