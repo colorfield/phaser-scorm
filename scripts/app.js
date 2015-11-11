@@ -2,11 +2,15 @@
  * Application settings and globals.
  */
 var App = {
-    game: new Phaser.Game('100', '100', Phaser.AUTO, 'main'), // Phaser.WEB_GL based on 100%
+    game: new Phaser.Game('100', '100', Phaser.AUTO, 'app'), // Phaser.WEB_GL based on 100%
+    daoTypes : {
+        SCORM : 0,
+        LOCAL : 1
+    },
     // SCORM lesson location representation
     lesson: {
         model: null,
-        daoType: 'localStorage', // localStorage or scorm
+        daoType: null,
     },
     // caches the parsed locale XML files
     locale: {},
@@ -31,7 +35,7 @@ var App = {
     }
 };
 
-// Adds states as methods
+// Adds Phaser states as methods
 App.BootState = function () {};
 App.LanguageState = function () {};
 App.WelcomeState = function () {};
@@ -64,7 +68,7 @@ window.onbeforeunload = function (e) {
         e.returnValue = closeLabel;
     }
     // @todo only if the model exists !
-    App.model.dao.terminateSession();
+    App.lesson.model.dao.terminateSession();
     // For Safari
     return closeLabel;
 };
@@ -73,5 +77,5 @@ window.onbeforeunload = function (e) {
  * End connection
  */
 window.onunload = function () {
-    App.model.dao.endConnection();
+    App.lesson.model.dao.endConnection();
 };
