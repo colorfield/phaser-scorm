@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<locale>
+    <entry id="next">
+        <language code="en">
+            <text>Next</text>
+        </language>
+        <language code="fr">
+            <text>Suivant</text>
+        </language>
+        <language code="nl">
+            <text>Volgende</text>
+        </language>
+    </entry>
+    <entry id="previous">
+        <language code="en">
+            <text>Previous</text>
+        </language>
+        <language code="fr">
+            <text>Précédent</text>
+        </language>
+        <language code="nl">
+            <text>Vorige</text>
+        </language>
+    </entry>
+    <entry id="start-game">
+        <language code="en">
+            <text>Start game</text>
+        </language>
+        <language code="fr">
+            <text>Démarrer le jeu</text>
+        </language>
+        <language code="nl">
+            <text>@todo NL Start game</text>
+        </language>
+    </entry>
+    <entry id="close">
+        <language code="en">
+            <text>Close</text>
+        </language>
+        <language code="fr">
+            <text>Fermer</text>
+        </language>
+        <language code="nl">
+            <text>Sluiten</text>
+        </language>
+    </entry>
+    <entry id="validate">
+        <language code="en">
+            <text>Validate</text>
+        </language>
+        <language code="fr">
+            <text>Valider</text>
+        </language>
+        <language code="nl">
+            <text>Bevestigen</text>
+        </language>
+    </entry>
+    <entry id="not-available">
+        <language code="en">
+            <text>Not available yet</text>
+        </language>
+        <language code="fr">
+            <text>Pas encore disponible</text>
+        </language>
+        <language code="nl">
+            <text>Nog niet beschikbaar</text>
+        </language>
+    </entry>
+    <entry id="not-again">
+        <language code="en">
+            <text>Do not show again.t</text>
+        </language>
+        <language code="fr">
+            <text>Ne plus afficher.</text>
+        </language>
+        <language code="nl">
+            <text>Niet meer tonen.</text>
+        </language>
+    </entry>
+    <entry id="correct-answers-singular">
+        <language code="en">
+            <text>@todo EN incorrect singular</text>
+        </language>
+        <language code="fr">
+            <text>Parfait! Réponse correcte!</text>
+        </language>
+        <language code="nl">
+            <text>@todo EN incorrect singular</text>
+        </language>
+    </entry>
+    <entry id="incorrect-answers-singular">
+        <language code="en">
+            <text>@todo EN incorrect singular</text>
+        </language>
+        <language code="fr">
+            <text>Dommage... la réponse exacte était</text>
+        </language>
+        <language code="nl">
+            <text>@todo EN incorrect singular</text>
+        </language>
+    </entry>
+    <entry id="correct-answers-plural">
+        <language code="en">
+            <text>@todo EN incorrect plural</text>
+        </language>
+        <language code="fr">
+            <text>Parfait! Toutes les réponses étaient correctes!</text>
+        </language>
+        <language code="nl">
+            <text>@todo EN incorrect plural</text>
+        </language>
+    </entry>
+    <entry id="incorrect-answers-plural">
+        <language code="en">
+            <text>@todo EN incorrect plural</text>
+        </language>
+        <language code="fr">
+            <text>Dommage... les réponses exactes étaient</text>
+        </language>
+        <language code="nl">
+            <text>@todo EN incorrect plural</text>
+        </language>
+    </entry>
+    <entry id="poll-result">
+        <language code="en">
+            <text>@todo EN poll result</text>
+        </language>
+        <language code="fr">
+            <text>Les résultats seront communiqués ultérieurement. Seul votre premier vote compte.</text>
+        </language>
+        <language code="nl">
+            <text>@todo EN poll result</text>
+        </language>
+    </entry>
+    <entry id="lms-not-connected">
+        <language code="en">
+            <text>Not connected to the LMS.</text>
+        </language>
+        <language code="fr">
+            <text>Vous n'êtes pas connecté au LMS.</text>
+        </language>
+        <language code="nl">
+            <text>@todo NL Not connected to the LMS.</text>
+        </language>
+    </entry>
+</locale>

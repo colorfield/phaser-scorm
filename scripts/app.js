@@ -31,7 +31,8 @@ var App = {
     },
     paths: {
         // @todo append assets directories
-        spritesheets: "assets/images/spritesheet"
+        spritesheets: "assets/images/spritesheet",
+        locale: "assets/locale"
     }
 };
 

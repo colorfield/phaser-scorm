@@ -11,6 +11,8 @@
     <!-- @todo user require to include Bower components -->
     <!--<script data-main="scripts/app" src="bower_components/requirejs/require.js"></script>-->
     <!-- @todo use Brunch to concat / minify / deploy -->
+    <script src="scripts/helpers/QueryString.js"></script>
+    <script src="scripts/helpers/Locale.js"></script>
     <script src="scripts/helpers/ScormHelper.js"></script>
     <script src="scripts/models/AbsctractStorageDAO.js"></script>
     <script src="scripts/models/LocalStorageDAO.js"></script>
@@ -19,15 +21,16 @@
     <script src="scripts/app.js"></script>
 </head>
 <body>
-    <!-- Overlay called from Phaser -->
+    <!-- Overlay called from Phaser to display SCORM interactions -->
     <div id="overlay" class="overlay">
-        <!-- @todo use template -->
+        <!-- @todo use template system like Underscore -->
         <div class="toolbar"><a class="close" href="#"><span>x</span></a></div>
         <div class="teasing"></div>
         <div class="wrapper"></div>
         <div class="results"></div>
-        <button id="game-validate" type="button">Valider</button>
-        <button id="game-close" type="button">Fermer</button>
+        <!-- @todo locale -->
+        <button id="game-validate" type="button">Validate</button>
+        <button id="game-close" type="button">Close</button>
     </div>
 
     <!-- Phaser container -->
