@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Phaser SCORM</title>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- @todo user require for Bower components -->
+    <!--<script data-main="scripts/app" src="bower_components/requirejs/require.js"></script>-->
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    <!-- Overlay called from Phaser -->
+    <div id="overlay" class="overlay">
+        <!-- @todo use template -->
+        <div class="toolbar"><a class="close" href="#"><span>x</span></a></div>
+        <div class="teasing"></div>
+        <div class="wrapper"></div>
+        <div class="results"></div>
+        <button id="game-validate" type="button">Valider</button>
+        <button id="game-close" type="button">Fermer</button>
+    </div>
+
+    <!-- Phaser container -->
+    <div id="app"></div>
+</body>
+</html>
