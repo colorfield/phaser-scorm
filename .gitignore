@@ -1,13 +1,15 @@
 /node_modules
+/bower_components
 /dist
 /.tmp
-/.sass-cache
-/bower_components
+public
+*.sass-cache
 
-# OS / IDE  generated files #
-######################
+# OS / IDE  generated files
 .DS_Store
 *.esproj
 *.sublime-project
 *.sublime-workspace
 *.idea
+*.vi
+Thumbs.db
