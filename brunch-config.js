@@ -1,3 +1,7 @@
+/**
+ * Note: modernizr and requirejs are missing the main property in bower.json
+ * @see https://github.com/paulmillr/read-components#README
+ */
 exports.config = {
     "paths": {
         "watched": ["app"],
@@ -20,11 +24,15 @@ exports.config = {
     "plugins": {
         "imageoptimizer": {
             "smushit": true,
-            "path": "assets/images/"
+            "path": "app/images/"
         }
     },
     "modules": {
         "wrapper": false,
         "definition": false
+    },
+    "server": {
+        "run": "yes",
+        "port": 4444
     }
 }

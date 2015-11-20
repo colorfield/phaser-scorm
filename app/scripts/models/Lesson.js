@@ -15,14 +15,13 @@ Lesson.prototype.daoFactory = function() {
         case App.daoTypes.SCORM:
             this.dao = new ScormDAO();
             break;
-        case App.daoTypes.SCORM:
+        case App.daoTypes.LOCAL:
         default:
             this.dao = new LocalStorageDAO();
             break;
     }
     return this.dao;
 };
-
 
 /**
  * Initializes the progress model.
