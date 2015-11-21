@@ -42,7 +42,7 @@ Once done, cd in the cloned directory then
 Then you can begin to code and build, basic Brunch operations are 
 * `brunch build` (or `brunch b`) for a one time build
 * `brunch watch`(or `brunch w`) to watch
-There are dozens of other features that are covered on the [Brunch.io documentation](https://github.com/brunch/brunch/tree/master/docs)
+There are dozens of other features that are covered on the [Brunch.io documentation](https://github.com/brunch/brunch/tree/master/docs), most common are `brunch build --production` (deploys for production environment), `brunch watch --server` (provides a server if you do not have / want a Nginx or Apache stack), ...
 
 *Troubleshooting*
 During the build, Brunch can yield "Error: Component JSON file ".../bower_components/#/.bower.json" 
