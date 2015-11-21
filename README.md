@@ -33,10 +33,10 @@ npm install -g brunch
 ````
 
 Once done, cd in the cloned directory then
-install the Brunch plugins 
-`npm install --save sass-brunch auto-reload-brunch clean-css-brunch css-brunch digest-brunch jade-brunch javascript-brunch jsenv-brunch uglify-js-brunch imageoptmizer-brunch`
-get the project dependencies with Bower
-`bower install`
+* install the Brunch plugins 
+```npm install --save sass-brunch auto-reload-brunch clean-css-brunch css-brunch digest-brunch jade-brunch javascript-brunch jsenv-brunch uglify-js-brunch imageoptmizer-brunch```
+* get the project dependencies with Bower
+```bower install```
 
 ### Build
 Then you can begin to code and build, basic Brunch operations are 
