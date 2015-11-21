@@ -5,7 +5,7 @@
     "colorfield <christophe@colorfield.eu>"
   ],
   "description": "A boilerplate Phaser application oriented to e-learning that can be deployed in a LMS",
-  "main": "app/app.js",
+  "main": "public/app.min.js",
   "moduleType": [
     "amd"
   ],

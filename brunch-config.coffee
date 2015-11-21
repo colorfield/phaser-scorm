@@ -7,14 +7,19 @@ module.exports = config:
   files:
     javascripts:
       joinTo:
-        'scripts/libraries.min.js': /^(?!app\/)/
-        #'scripts/libraries.min.js': /^bower_components/
-        'scripts/app.min.js': /^app\//
-      order:
-        after: [
-          'app/app.js'
-        ]
-    stylesheets: joinTo: 'app.min.css'
+        'scripts/vendor.js': /^bower_components/
+        'scripts/app.js': /^app/
+      #order:
+      #  before: [
+      #    'bower_components/phaser/build/phaser.js'
+      #  ]
+      #  after: [
+      #    'app/app.js'
+      #  ]
+    stylesheets:
+      joinTo: 'app.css'
+    templates:
+      joinTo: 'scripts/app.js'
   conventions:
     assets: /assets[\\/]/
   plugins:

@@ -1,10 +1,36 @@
 "use strict";
 
 var App = {
+    questions: ['q1', 'q2', 'q3'],
+    //game: new Phaser.Game('100', '100', Phaser.AUTO, 'app'), // Phaser.WEB_GL based on 100%
     init: function init() {
         console.log("Application initialized");
+        // @todo move temporary test of Jade templating system
+        //var modal = require('scripts/controllers/Modal');
+        //console.log(modal);
+        var tmpl = require('views/modal');
+        var html = tmpl({ questions: App.questions });
+        $('body').append(html);
+
+        // @todo game states
+        /*
+        App.game.state.add('boot', App.BootState);
+        App.game.state.add('language', App.LanguageState);
+        App.game.state.add('welcome', App.WelcomeState);
+        App.game.state.add('loadGame', App.LoadGameState);
+        App.game.state.add('game', App.GameState);
+
+        App.game.state.start('boot');
+        */
     }
 };
+
+// Adds Phaser states as methods
+App.BootState = function () {};
+App.LanguageState = function () {};
+App.WelcomeState = function () {};
+App.LoadGameState = function () {};
+App.GameState = function () {};
 
 module.exports = App;
 
@@ -15,7 +41,6 @@ module.exports = App;
  */
 /*
 var App = {
-    //game: new Phaser.Game('100', '100', Phaser.AUTO, 'app'), // Phaser.WEB_GL based on 100%
     daoTypes : {
         SCORM : 0,
         LOCAL : 1
@@ -48,27 +73,6 @@ var App = {
         locale: "assets/locale"
     }
 };
-*/
-
-
-/*
-// Adds Phaser states as methods
-App.BootState = function () {};
-App.LanguageState = function () {};
-App.WelcomeState = function () {};
-App.LoadGameState = function () {};
-App.GameState = function () {};
-*/
-
-// initialize
-/*
-App.game.state.add('boot', App.BootState);
-App.game.state.add('language', App.LanguageState);
-App.game.state.add('welcome', App.WelcomeState);
-App.game.state.add('loadGame', App.LoadGameState);
-App.game.state.add('game', App.GameState);
-
-App.game.state.start('boot');
 */
 
 /**
