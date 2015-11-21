@@ -2,7 +2,7 @@
  * Lesson representation in JSON, based on a DAO source.
  * @constructor
  */
-function Lesson() {
+var Lesson = function() {
     this.dao = null;  // container for the DAO
     this.progress = {}; // @todo provide default
 }

@@ -1,8 +1,21 @@
+"use strict";
+
+var App = {
+    init: function init() {
+        console.log("Application initialized");
+    }
+};
+
+module.exports = App;
+
+//# sourceMappingURL=app.min.js.map
+
 /**
  * Application settings and globals.
  */
+/*
 var App = {
-    game: new Phaser.Game('100', '100', Phaser.AUTO, 'app'), // Phaser.WEB_GL based on 100%
+    //game: new Phaser.Game('100', '100', Phaser.AUTO, 'app'), // Phaser.WEB_GL based on 100%
     daoTypes : {
         SCORM : 0,
         LOCAL : 1
@@ -35,13 +48,17 @@ var App = {
         locale: "assets/locale"
     }
 };
+*/
 
+
+/*
 // Adds Phaser states as methods
 App.BootState = function () {};
 App.LanguageState = function () {};
 App.WelcomeState = function () {};
 App.LoadGameState = function () {};
 App.GameState = function () {};
+*/
 
 // initialize
 /*
@@ -56,9 +73,11 @@ App.game.state.start('boot');
 
 /**
  * Terminates session on a modal confirmation.
+ * @todo
  * @param e
  * @returns {string}
  */
+/*
 window.onbeforeunload = function (e) {
     // @todo locale
     var closeLabel = "Close ?";
@@ -73,10 +92,14 @@ window.onbeforeunload = function (e) {
     // For Safari
     return closeLabel;
 };
+*/
 
 /**
- * End connection
+ * Ends connection
+ * @todo
  */
+/*
 window.onunload = function () {
     App.lesson.model.dao.endConnection();
 };
+*/

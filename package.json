@@ -15,16 +15,16 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "auto-reload-brunch": "^1.7.8",
-    "brunch": "^1.7.14",
-    "clean-css-brunch": "^1.7.2",
-    "css-brunch": "^1.7.0",
+    "brunch": "^1.8.5",
+    "auto-reload-brunch": "^1.8.1",
     "digest-brunch": "^1.5.1",
-    "imageoptmizer-brunch": "0.0.4",
-    "jade-brunch": "^1.8.2",
-    "javascript-brunch": "^1.7.1",
+    "javascript-brunch": "^1.8.0",
     "jsenv-brunch": "^1.4.2",
+    "uglify-js-brunch": "^1.7.8",
+    "css-brunch": "^1.7.0",
+    "clean-css-brunch": "^1.8.0",
     "sass-brunch": "^1.9.1",
-    "uglify-js-brunch": "^1.7.8"
+    "jade-brunch": "^1.8.2",
+    "imageoptmizer-brunch": "0.0.4"
   }
 }

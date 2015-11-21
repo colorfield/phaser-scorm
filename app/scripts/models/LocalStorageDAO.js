@@ -2,7 +2,7 @@
  * Concrete DAO class that implements localStorage.
  * @constructor
  */
-function LocalStorageDAO() {
+var LocalStorageDAO = function () {
     AbstractStorageDOA.call(this);
 };
 

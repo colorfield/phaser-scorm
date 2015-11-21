@@ -2,7 +2,7 @@
  * Concrete DAO class that implements SCORM.
  * @constructor
  */
-function ScormDAO() {
+var ScormDAO = function() {
     AbstractStorageDOA.call(this);
 };
 
