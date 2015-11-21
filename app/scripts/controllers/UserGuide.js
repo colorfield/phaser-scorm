@@ -23,6 +23,7 @@ UserGuide.prototype.closeOverlay = function() {
     $(this.elementID + " #game-close").off("click");
     $(this.elementID).off("keydown");
     // removes the "not again" event
+    // @todo review possible refactoring by calling super (closeOverlay from parent)
     $(this.elementID + " #not-again").off("click");
     $.modal.close();
 };

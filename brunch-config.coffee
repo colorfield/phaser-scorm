@@ -19,7 +19,7 @@ module.exports = config:
     stylesheets:
       joinTo: 'app.css'
     templates:
-      joinTo: 'scripts/app.js'
+      joinTo: 'scripts/templates.js'
   conventions:
     assets: /assets[\\/]/
   plugins:
