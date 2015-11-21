@@ -1,14 +1,13 @@
-// @todo review EcmaScript inheritence and interface best practices
-ScormDAO.prototype = new AbstractStorageDOA();
-ScormDAO.prototype.constructor = ScormDAO;
-
 /**
  * Concrete DAO class that implements SCORM.
  * @constructor
  */
 function ScormDAO() {
-   this.scormHelper = new ScormHelper(); // ScormHelper composition
-}
+    AbstractStorageDOA.call(this);
+};
+
+ScormDAO.prototype = Object.create(AbstractStorageDOA.prototype);
+ScormDAO.prototype.constructor = ScormDAO;
 
 /**
  * Gets the progress.

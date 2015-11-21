@@ -1,13 +1,13 @@
-// @todo review EcmaScript inheritence and interface best practices
-LocalStorageDAO.prototype = new AbstractStorageDOA();
-LocalStorageDAO.prototype.constructor = LocalStorageDAO;
-
 /**
- * Concrete DAO class that implements LocalStorage.
+ * Concrete DAO class that implements localStorage.
  * @constructor
  */
 function LocalStorageDAO() {
-}
+    AbstractStorageDOA.call(this);
+};
+
+LocalStorageDAO.prototype = Object.create(AbstractStorageDOA.prototype);
+LocalStorageDAO.prototype.constructor = LocalStorageDAO;
 
 /**
  * Gets the progress.
