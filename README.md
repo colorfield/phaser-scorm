@@ -25,16 +25,18 @@ E-learning exposed via endless slides tends to be boring, the purpose of this st
 ## Getting started
 
 ### Setup
-You need Bower (package manager) and Brunch (build) + Brunch plugins (concat, minify, ...).
+You need Bower (package manager), Brunch (build) + Brunch plugins (concat, minify, ...) and Nightwatch (unit tests).
 If not installed yet, get [Node.js](https://nodejs.org/en/download/) and install Bower and Brunch globally :
 ```
 npm install -g bower
 npm install -g brunch
+npm install -g nightwatch
 ````
+[Nightwatch documentation](https://github.com/hayesmaker/phase-2-e)
 
 Once done, cd in the cloned directory then
 * install the Brunch plugins 
-```npm install --save-dev sass-brunch auto-reload-brunch clean-css-brunch css-brunch digest-brunch jade-brunch javascript-brunch jsenv-brunch uglify-js-brunch imageoptmizer-brunch```
+```npm install --save-dev sass-brunch auto-reload-brunch clean-css-brunch css-brunch digest-brunch jade-brunch javascript-brunch jsenv-brunch uglify-js-brunch imageoptmizer-brunch phase-2-e```
 * get the project dependencies with Bower
 ```bower install```
 
