@@ -2,7 +2,7 @@
 # @see https://github.com/paulmillr/read-components#README
 module.exports = config:
   paths:
-    watched: ['app']
+    watched: ['app'] # vendor included by Brunch as bower_components
     public: 'public'
   files:
     javascripts:

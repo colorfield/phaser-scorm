@@ -1,19 +1,29 @@
 {
   "name": "phaser-scorm",
   "description": "Phaser with SCORM",
-  "author": "colorfield <christophe@colorfield.eu>",
+  "author": "colorfield <christophe@colorfield.eu> (http://colorfield.eu)",
   "version": "0.0.1",
-  "repository": {
-    "type": "",
-    "url": ""
-  },
   "scripts": {
     "start": "brunch watch --server",
-    "test": "brunch test",
+    "test": "npm test",
     "build": "brunch build --production",
     "prepublish": "brunch build --production"
   },
-  "dependencies": {},
+  "keywords": [
+    "phaser",
+    "phaser.io",
+    "canvas",
+    "html5",
+    "scorm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-daneelolivaw/phaser-scorm"
+  },
+  "bugs": {
+    "url": "https://github.com/r-daneelolivaw/phaser-scorm/issues"
+  },
+  "homepage": "https://github.com/r-daneelolivaw/phaser-scorm#readme",
   "devDependencies": {
     "auto-reload-brunch": "^1.8.1",
     "brunch": "^1.8.5",
@@ -25,6 +35,14 @@
     "javascript-brunch": "^1.8.0",
     "jsenv-brunch": "^1.4.2",
     "sass-brunch": "^1.9.1",
-    "uglify-js-brunch": "^1.7.8"
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7",
+    "socket.io": "^1.3.6",
+    "uglify-js-brunch": "^1.7.8",
+    "nightwatch": "^0.8.5"
   }
 }
