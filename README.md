@@ -36,7 +36,7 @@ npm install -g nightwatch
 [Nightwatch documentation](https://github.com/hayesmaker/phase-2-e)
 
 Once done, cd in the cloned directory then
-* install the node modules 
+* install the Node modules (Brunch plugins)
 ```npm install --save-dev sass-brunch auto-reload-brunch clean-css-brunch css-brunch digest-brunch jade-brunch javascript-brunch jsenv-brunch uglify-js-brunch imageoptmizer-brunch phase-2-e```
 * get the project dependencies with Bower
 ```bower install```
