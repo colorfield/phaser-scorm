@@ -1,0 +1,7 @@
+div#language
+    h1 Phaser SCORM game
+    p Pick your language
+    ul#language-picker
+        each language in languages
+            li.flag
+                a(href='#' id=language.code)= language.label

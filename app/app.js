@@ -8,8 +8,8 @@ var App = {
         // @todo move temporary test of Jade templating system
         //var modal = require('scripts/controllers/Modal');
         //console.log(modal);
-        var tmpl = require('views/modal');
-        var html = tmpl({ questions: App.questions });
+        var tpl = require('views/modal');
+        var html = tpl({ questions: App.questions });
         $('body').append(html);
 
         // @todo game states
@@ -22,7 +22,26 @@ var App = {
 
         App.game.state.start('boot');
         */
-    }
+    },
+    // production settings all set to false
+    debug: {
+        info: false,            // displays debug info
+        disableStorage: false,  // if set to true, enforces LocalStorageDAO and disables I/O on localStorage
+        clearStorage: false,    // empties localStorage
+        warp: false,            // direct access to the main game state, skips language and welcome states
+        gameComplete: false     // completes all interactions, flushStorage must be set to true (if true)
+    },
+    // caches the parsed locale XML files
+    locale: {},
+    // language @todo delegate in helper class
+    language: {
+        language: null,
+        available: [
+            {code: 'fr_BE', label: 'Français'},
+            {code: 'nl_NL', label: 'Nederlands'},
+            {code: 'en_UK', label: 'English'}
+        ]
+    },
 };
 
 // Adds Phaser states as methods
@@ -49,23 +68,6 @@ var App = {
     lesson: {
         model: null,
         daoType: null,
-    },
-    // caches the parsed locale XML files
-    locale: {},
-    language: {
-        language: null,
-        available: {
-            fr_BE: 'Français',
-            nl_NL: 'Nederlands',
-            en_UK: 'English'
-        }
-    },
-    // production settings all set to false
-    debug: {
-        info: false, // displays debug info
-        disableStorage: false, // if set to true, enforces LocalStorageDAO and disables I/O on localStorage
-        clearStorage: false, // Storage: false,  // empties localStorage
-        warp: false // direct access to the main game state
     },
     paths: {
         // @todo append assets directories
