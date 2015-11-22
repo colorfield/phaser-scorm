@@ -1,7 +1,9 @@
+"use strict";
+
 /**
  * Load state, used for the main game
  */
-StoryMap.LoadGame.prototype = {
+App.LoadGameState.prototype = {
 
     currentMapPercents : 0,
 
@@ -115,3 +117,5 @@ function loadComplete(){
     //console.log("Load complete");
     this.game.state.start('game');
 }
+
+module.exports = LoadGameState;

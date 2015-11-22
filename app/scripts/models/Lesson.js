@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Lesson representation in JSON, based on a DAO source.
  * @constructor
@@ -38,3 +40,5 @@ Lesson.prototype.setProgress = function(json) {
     // @todo check json validity
     this.progress = json;
 };
+
+module.exports = Lesson;

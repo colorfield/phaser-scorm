@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * QueryString helper to fetch them from the URL.
  */
@@ -23,3 +25,5 @@ var QueryString = function () {
     }
     return query_string;
 }();
+
+module.exports = QueryString;

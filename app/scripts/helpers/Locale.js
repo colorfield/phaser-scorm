@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Locale (l10n) helper.
  * @constructor
@@ -33,3 +35,5 @@ Locale.prototype.localizeByID = function(strID, xml) {
     result = parsedXML.querySelector('[id="'+strID+'"] [code="'+App.language.language+'"] text').textContent;
     return result;
 };
+
+module.exports = Locale;

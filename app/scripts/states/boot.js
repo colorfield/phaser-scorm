@@ -1,3 +1,5 @@
+"use strict";
+
 App.BootState.prototype = {
 
     preload: function () {
@@ -20,3 +22,5 @@ App.BootState.prototype = {
     }
 
 };
+
+module.exports = BootState;

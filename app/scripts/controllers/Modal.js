@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Abstract Modal view.
  * @constructor
@@ -44,3 +46,5 @@ Modal.prototype.closeOverlay = function() {
     //$(this.elementID + " #overlay #not-again").off("click");
     $.modal.close();
 };
+
+module.exports = Modal;

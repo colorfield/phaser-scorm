@@ -1,3 +1,5 @@
+"use strict";
+
 App.LanguageState.prototype = {
 
     init: function () {
@@ -39,3 +41,4 @@ App.LanguageState.prototype = {
     }
 };
 
+module.exports = LanguageState;

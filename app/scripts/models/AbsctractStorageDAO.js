@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Defines common behaviour between DAO.
  * @constructor
@@ -169,3 +171,5 @@ AbstractStorageDOA.prototype.convertTotalSeconds = function(ts) {
 
     return rtnVal;
 };
+
+module.exports = AbstractStorageDOA;

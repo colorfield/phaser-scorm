@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Concrete DAO class that implements SCORM.
  * @constructor
@@ -105,3 +107,5 @@ ScormDAO.prototype.getDebugInfo = function(){
     console.log('--- TOTAL TIME ---');
     console.log(this.scormHelper.getScormTotalTime());
 };
+
+module.exports = ScormDAO;

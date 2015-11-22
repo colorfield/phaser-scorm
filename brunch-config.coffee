@@ -1,4 +1,4 @@
-# Note: modernizr and requirejs are missing the main property in bower.json
+# Note: modernizr misses the main property in bower.json
 # @see https://github.com/paulmillr/read-components#README
 module.exports = config:
   paths:

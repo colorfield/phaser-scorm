@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Concrete DAO class that implements localStorage.
  * @constructor
@@ -109,3 +111,4 @@ LocalStorageDAO.prototype.getDebugInfo = function(){
     }
 };
 
+module.exports = LocalStorageDAO;

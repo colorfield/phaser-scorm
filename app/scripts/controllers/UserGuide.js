@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Concrete class that implements the UserGuide.
  * @param elementID
@@ -27,3 +29,5 @@ UserGuide.prototype.closeOverlay = function() {
     $(this.elementID + " #not-again").off("click");
     $.modal.close();
 };
+
+module.exports = UserGuide;

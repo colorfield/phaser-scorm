@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Encapsulates SCORM common operations.
  * Delegates the heavy lifting to pipwerks SCORM API wrapper.
@@ -173,3 +175,5 @@ ScormHelper.prototype.getScormTotalTime = function() {
     var time = this.scormGet("cmi.core.total_time");
     return time;
 };
+
+module.exports = ScormHelper;
