@@ -2,6 +2,7 @@
 
 A boilerplate Phaser application, *still under development*, oriented to e-learning that can be deployed in a LMS (Learning Management System, like Moodle) as a SCORM package.
 E-learning exposed via endless slides tends to be boring, the purpose of this starter kit is to expose small HTML5 games (quiz forms, fill blanks, ...) via an immersive Phaser interface. The SCORM package is bundled as a single lesson.
+Interactions can be exposed via Phaser (let's say: discussion with other students, platformer, ...) or via a partial HTML overlay (more suitable for form interactions like quiz, sort, fill blanks, ...).
 
 ## The following features are covered
 * A DAO factory to allow debugging in localStorage before implementation in SCORM 
